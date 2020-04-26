@@ -1,0 +1,38 @@
+@colorBase: #000000;
+@colorHover: #083f92;
+@colorWhite: #ffffff;
+@colorOrange: #E75D2E;
+@padding: 30px;
+@paddingTop: 40px;
+
+@picsUrl: '../img';
+
+@medium: ~'(max-width: 1769px)';
+@notebook: ~'(max-width: 1279px)';
+@notebook-sm: ~'(max-width: 1199px)';
+@tablet: ~'(max-width: 991px)';
+@mobile: ~'(max-width: 767px)';
+@small: ~'(max-width: 575px)';
+
+.underlineLink(@color, @colorHover) {
+	box-shadow: 0 1px 0 fade(@color, 50%);
+	
+	&:hover {
+		box-shadow: 0 1px 0 fade(@colorHover, 50%);
+	}
+}
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+	:-moz-placeholder {
+		color: @color;
+	}
+	::-moz-placeholder {
+		color: @color;
+	}
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}
